@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bi4apk73c8783"
+path="res://.godot/imported/Miguel Johnson - A Better Future.mp3-2b4e0b1cba5b904c1f61637b58e78383.mp3str"
+
+[deps]
+
+source_file="res://musics/Miguel Johnson - A Better Future.mp3"
+dest_files=["res://.godot/imported/Miguel Johnson - A Better Future.mp3-2b4e0b1cba5b904c1f61637b58e78383.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

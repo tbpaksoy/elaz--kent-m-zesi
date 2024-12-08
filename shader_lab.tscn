@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://c83buggl7w3lv"]
+
+[ext_resource type="Shader" path="res://shaders/Highlight Evo.gdshader" id="1_g2amm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8ry80"]
+render_priority = 0
+shader = ExtResource("1_g2amm")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_epg3q"]
+
+[node name="ShaderLab" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_8ry80")
+mesh = SubResource("CylinderMesh_epg3q")
