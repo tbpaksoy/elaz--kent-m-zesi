@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://co06khlx0d8g3"
 path.s3tc="res://.godot/imported/Elazığ Kent Müzesi_Ottoman Sword 0 BC.png-d8ec905c93102902b608a32dd2ae6498.s3tc.ctex"
+path.etc2="res://.godot/imported/Elazığ Kent Müzesi_Ottoman Sword 0 BC.png-d8ec905c93102902b608a32dd2ae6498.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Elazığ Kent Müzesi_Ottoman Sword 0 BC.png"
-dest_files=["res://.godot/imported/Elazığ Kent Müzesi_Ottoman Sword 0 BC.png-d8ec905c93102902b608a32dd2ae6498.s3tc.ctex"]
+dest_files=["res://.godot/imported/Elazığ Kent Müzesi_Ottoman Sword 0 BC.png-d8ec905c93102902b608a32dd2ae6498.s3tc.ctex", "res://.godot/imported/Elazığ Kent Müzesi_Ottoman Sword 0 BC.png-d8ec905c93102902b608a32dd2ae6498.etc2.ctex"]
 
 [params]
 

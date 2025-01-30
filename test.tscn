@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://wvhtmdr3yxl1"]
+[gd_scene load_steps=33 format=3 uid="uid://wvhtmdr3yxl1"]
 
 [ext_resource type="PackedScene" uid="uid://jijad7bxexs5" path="res://Elazığ Kent Müzesi.glb" id="1_r88f1"]
 [ext_resource type="Script" path="res://scripts/Visitor.cs" id="2_6k0na"]
@@ -70,6 +70,9 @@ size = Vector3(1, 4.62695, 5.99524)
 [sub_resource type="BoxShape3D" id="BoxShape3D_2wbpc"]
 size = Vector3(7.39606, 3.81885, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_qgtm0"]
+size = Vector3(3.00525, 1.33057, 1.96149)
+
 [sub_resource type="Environment" id="Environment_3mb33"]
 tonemap_mode = 1
 tonemap_exposure = 3.27
@@ -83,6 +86,15 @@ tonemap_white = 7.37
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_issjw"]
 height = 1.8
 
+[sub_resource type="Environment" id="Environment_36t5v"]
+tonemap_exposure = 2.0
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 3.0
+glow_strength = 1.5
+glow_blend_mode = 0
+glow_hdr_threshold = 1.5
+
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_2du7b"]
 streams_count = 1
 stream_0/stream = ExtResource("4_0x6dq")
@@ -92,15 +104,11 @@ stream_0/stream = ExtResource("4_0x6dq")
 [node name="Elazığ Kent Müzesi" parent="." instance=ExtResource("1_r88f1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -2)
 
-[node name="Plane" parent="Elazığ Kent Müzesi" index="0"]
-surface_material_override/0 = ExtResource("2_h8b4n")
-
-[node name="Piano 0" parent="Elazığ Kent Müzesi" index="7"]
+[node name="Piano 0" parent="Elazığ Kent Müzesi" index="13"]
 layers = 3
 metadata/about = {
-"description_de": "Ein Klavier aus den 50er oder 60er Jahren.",
-"description_en": "A piano that left from 50s or 60s.",
-"description_tr": "50'li ya da 60'lı yıllardan kalma bir piyano.",
+"description_en": "A piano from 50s or 60s.",
+"description_tr": "50'li veya 60'lı yıllardan kalama bir piyano.",
 "name_de": "Klavier",
 "name_en": "Piano",
 "name_tr": "Piyano"
@@ -114,13 +122,11 @@ collision_mask = 2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Elazığ Kent Müzesi/Piano 0/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_hnoxd")
 
-[node name="Urartu Relief 0" parent="Elazığ Kent Müzesi" index="8"]
+[node name="Urartu Relief 0" parent="Elazığ Kent Müzesi" index="14"]
 layers = 3
 metadata/about = {
-"description_de": "Eine Erleichterung von den Urartäern, einer Zivilisation Anatoliens.",
-"description_en": "A relief left from Urartus, one of the civilizations of Anatolia.",
-"description_tr": "Anadolu uygarlıklarından olan Urartulardan kalma bir rölyef.",
-"name_de ": "Urartu-Erleichtung.",
+"description_en": "A relief left from Urartus, an Anatolian civilization.",
+"description_tr": "Anadolu uygarlığı Urartulardan kalma bir rölyef.",
 "name_en": "Urartu Relief",
 "name_tr": "Urartu Rölyefi"
 }
@@ -132,8 +138,14 @@ collision_mask = 2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Elazığ Kent Müzesi/Urartu Relief 0/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_p1m1l")
 
-[node name="Defense Shield 0" parent="Elazığ Kent Müzesi" index="9"]
+[node name="Defense Shield 0" parent="Elazığ Kent Müzesi" index="15"]
 layers = 3
+metadata/about = {
+"description_en": "A old defence shield.",
+"description_tr": "Eski bir savunma kalkanı.",
+"name_en": "Shield",
+"name_tr": "Kalkan"
+}
 metadata/cvc = NodePath("../Camera3D")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Elazığ Kent Müzesi/Defense Shield 0" index="0"]
@@ -143,9 +155,8 @@ collision_mask = 2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Elazığ Kent Müzesi/Defense Shield 0/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_m8msw")
 
-[node name="Pistol 0" parent="Elazığ Kent Müzesi" index="10"]
+[node name="Pistol 0" parent="Elazığ Kent Müzesi" index="16"]
 layers = 3
-metadata/cvc = NodePath("../Camera3D6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Elazığ Kent Müzesi/Pistol 0" index="0"]
 collision_layer = 2
@@ -154,9 +165,8 @@ collision_mask = 2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Elazığ Kent Müzesi/Pistol 0/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_bkcij")
 
-[node name="Defense Shield 1" parent="Elazığ Kent Müzesi" index="11"]
+[node name="Defense Shield 1" parent="Elazığ Kent Müzesi" index="17"]
 layers = 3
-metadata/cvc = NodePath("../Camera3D3")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Elazığ Kent Müzesi/Defense Shield 1" index="0"]
 collision_layer = 2
@@ -165,7 +175,7 @@ collision_mask = 2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Elazığ Kent Müzesi/Defense Shield 1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_b8ivj")
 
-[node name="Sphere" parent="Elazığ Kent Müzesi" index="13"]
+[node name="Sphere" parent="Elazığ Kent Müzesi" index="19"]
 layers = 3
 metadata/cvc = NodePath("../Camera3D4")
 
@@ -176,16 +186,16 @@ collision_mask = 2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Elazığ Kent Müzesi/Sphere/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0ruh7")
 
-[node name="Medieval Sword" parent="Elazığ Kent Müzesi" index="14"]
+[node name="Medieval Sword" parent="Elazığ Kent Müzesi" index="20"]
 layers = 3
-metadata/cvc = NodePath("../Camera3D4")
 metadata/about = {
-"description_en": "A sword left from Byzantines or Crusaders.",
-"description_tr": "Bizans ya da Haçlılardan kalma kılıç.",
-"name_de": "Mittelalterliches Schwert",
-"name_en": "Medieval Sword",
-"name_tr": "Ortaçağ Kılıcı"
+"description_en": "A sword left from Byzatines.",
+"description_tr": "Bizanslılardan kalma bir kılıç.",
+"name_de": "Schwert",
+"name_en": "Sword",
+"name_tr": "Kılıç"
 }
+metadata/cvc = NodePath("../Camera3D4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Elazığ Kent Müzesi/Medieval Sword" index="0"]
 collision_layer = 2
@@ -201,8 +211,15 @@ metadata/about = {
 "name_tr": "Ortaçağ Kılıcı"
 }
 
-[node name="Ottoman Sword 0" parent="Elazığ Kent Müzesi" index="21"]
+[node name="Ottoman Sword 0" parent="Elazığ Kent Müzesi" index="27"]
 transform = Transform3D(-1.41056e-07, 0.591532, 0.806282, 2.98023e-08, 0.806282, -0.591532, -1, -5.94101e-08, -1.3136e-07, 16.6475, 1.45274, -0.436073)
+metadata/about = {
+"description_en": "A sword left from Ottomans.",
+"description_tr": "Osmanlılardan kalma bir kılıç.",
+"name_de": "Schwert",
+"name_en": "Sword",
+"name_tr": "Kılıç"
+}
 metadata/cvc = NodePath("../Camera3D2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Elazığ Kent Müzesi/Ottoman Sword 0" index="0"]
@@ -212,9 +229,6 @@ collision_mask = 2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Elazığ Kent Müzesi/Ottoman Sword 0/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_brqhb")
 
-[node name="Arrow Bone" parent="Elazığ Kent Müzesi" index="24"]
-metadata/cvc = NodePath("../Camera3D5")
-
 [node name="StaticBody3D" type="StaticBody3D" parent="Elazığ Kent Müzesi/Arrow Bone" index="0"]
 collision_layer = 2
 collision_mask = 2
@@ -222,18 +236,12 @@ collision_mask = 2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Elazığ Kent Müzesi/Arrow Bone/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_2uj7g")
 
-[node name="Arrow Stone" parent="Elazığ Kent Müzesi" index="25"]
-metadata/cvc = NodePath("../Camera3D5")
-
 [node name="StaticBody3D" type="StaticBody3D" parent="Elazığ Kent Müzesi/Arrow Stone" index="0"]
 collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Elazığ Kent Müzesi/Arrow Stone/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_q0fjy")
-
-[node name="Arrow Metal" parent="Elazığ Kent Müzesi" index="26"]
-metadata/cvc = NodePath("../Camera3D5")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Elazığ Kent Müzesi/Arrow Metal" index="0"]
 collision_layer = 2
@@ -255,6 +263,9 @@ collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Elazığ Kent Müzesi/Pistol 2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_q378m")
+
+[node name="Plane" parent="Elazığ Kent Müzesi" index="41"]
+surface_material_override/0 = ExtResource("2_h8b4n")
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="Elazığ Kent Müzesi"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 9.74945, 3.79435, 0.484442)
@@ -328,7 +339,6 @@ spot_angle = 39.47
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Elazığ Kent Müzesi"]
 transform = Transform3D(0.707107, 0.5, 0.5, -0.707107, 0.5, 0.5, 0, -0.707107, 0.707107, 0, 6, 0)
-visible = false
 light_color = Color(1, 1, 0.87451, 1)
 light_energy = 0.15
 
@@ -378,6 +388,10 @@ shape = SubResource("BoxShape3D_4lpyf")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00161743, 1.8821, 10.4889)
 shape = SubResource("BoxShape3D_2wbpc")
 
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Elazığ Kent Müzesi/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0337, 0.165283, 0.284027)
+shape = SubResource("BoxShape3D_qgtm0")
+
 [node name="OmniLight3D" type="OmniLight3D" parent="Elazığ Kent Müzesi"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.83771, 1.2806)
 light_energy = 0.7
@@ -389,7 +403,7 @@ environment = ExtResource("2_uh8gs")
 projection = 1
 
 [node name="Camera3D4" type="Camera3D" parent="Elazığ Kent Müzesi"]
-transform = Transform3D(0.99018, -0.0230729, 0.137878, 1.21464e-08, 0.986286, 0.165048, -0.139795, -0.163427, 0.976601, 13.4104, 2.104, 2.81691)
+transform = Transform3D(0.99018, -0.0230729, 0.137878, 1.21464e-08, 0.986286, 0.165048, -0.139795, -0.163427, 0.976601, 14.1274, 2.104, 2.81691)
 environment = ExtResource("2_uh8gs")
 projection = 1
 size = 1.332
@@ -425,6 +439,13 @@ environment = SubResource("Environment_ta4qc")
 projection = 1
 size = 2.0
 
+[node name="SpotLight3D" type="SpotLight3D" parent="Elazığ Kent Müzesi"]
+transform = Transform3D(-3.925e-08, -0.440127, 0.897935, -1.92386e-08, 0.897935, 0.440127, -1, 0, -4.37114e-08, -16.1501, 3.42389, 0)
+light_color = Color(1, 1, 0.87451, 1)
+light_energy = 4.0
+spot_range = 18.2729
+spot_angle = 53.4375
+
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." node_paths=PackedStringArray("layer")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.251444, 0)
 script = ExtResource("2_6k0na")
@@ -440,6 +461,7 @@ unique_name_in_owner = true
 [node name="camera" type="Camera3D" parent="CharacterBody3D/neck"]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.59278, -0.362276)
+environment = SubResource("Environment_36t5v")
 current = true
 
 [node name="ray_cast" type="RayCast3D" parent="CharacterBody3D/neck/camera"]

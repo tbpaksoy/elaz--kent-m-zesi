@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb3h375ua8"
 path.s3tc="res://.godot/imported/Elazığ Kent Müzesi_Pistol 2 Base Color.png-5f0437b8b469517e6a9e4618a12a00a4.s3tc.ctex"
+path.etc2="res://.godot/imported/Elazığ Kent Müzesi_Pistol 2 Base Color.png-5f0437b8b469517e6a9e4618a12a00a4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Elazığ Kent Müzesi_Pistol 2 Base Color.png"
-dest_files=["res://.godot/imported/Elazığ Kent Müzesi_Pistol 2 Base Color.png-5f0437b8b469517e6a9e4618a12a00a4.s3tc.ctex"]
+dest_files=["res://.godot/imported/Elazığ Kent Müzesi_Pistol 2 Base Color.png-5f0437b8b469517e6a9e4618a12a00a4.s3tc.ctex", "res://.godot/imported/Elazığ Kent Müzesi_Pistol 2 Base Color.png-5f0437b8b469517e6a9e4618a12a00a4.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4m4373s5qv5l"
 path.s3tc="res://.godot/imported/Elazığ Kent Müzesi_Medieval Sword 0 Metallic-Medieval Sword 0 Roughness.png-5c977e1fa18c43e2aa41d0bed1b10f8c.s3tc.ctex"
+path.etc2="res://.godot/imported/Elazığ Kent Müzesi_Medieval Sword 0 Metallic-Medieval Sword 0 Roughness.png-5c977e1fa18c43e2aa41d0bed1b10f8c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Elazığ Kent Müzesi_Medieval Sword 0 Metallic-Medieval Sword 0 Roughness.png"
-dest_files=["res://.godot/imported/Elazığ Kent Müzesi_Medieval Sword 0 Metallic-Medieval Sword 0 Roughness.png-5c977e1fa18c43e2aa41d0bed1b10f8c.s3tc.ctex"]
+dest_files=["res://.godot/imported/Elazığ Kent Müzesi_Medieval Sword 0 Metallic-Medieval Sword 0 Roughness.png-5c977e1fa18c43e2aa41d0bed1b10f8c.s3tc.ctex", "res://.godot/imported/Elazığ Kent Müzesi_Medieval Sword 0 Metallic-Medieval Sword 0 Roughness.png-5c977e1fa18c43e2aa41d0bed1b10f8c.etc2.ctex"]
 
 [params]
 

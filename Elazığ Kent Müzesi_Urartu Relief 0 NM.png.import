@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://civnn8lgcdhs"
 path.s3tc="res://.godot/imported/Elazığ Kent Müzesi_Urartu Relief 0 NM.png-3aa53309e6197c77dbd89ea316c15465.s3tc.ctex"
+path.etc2="res://.godot/imported/Elazığ Kent Müzesi_Urartu Relief 0 NM.png-3aa53309e6197c77dbd89ea316c15465.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Elazığ Kent Müzesi_Urartu Relief 0 NM.png"
-dest_files=["res://.godot/imported/Elazığ Kent Müzesi_Urartu Relief 0 NM.png-3aa53309e6197c77dbd89ea316c15465.s3tc.ctex"]
+dest_files=["res://.godot/imported/Elazığ Kent Müzesi_Urartu Relief 0 NM.png-3aa53309e6197c77dbd89ea316c15465.s3tc.ctex", "res://.godot/imported/Elazığ Kent Müzesi_Urartu Relief 0 NM.png-3aa53309e6197c77dbd89ea316c15465.etc2.ctex"]
 
 [params]
 

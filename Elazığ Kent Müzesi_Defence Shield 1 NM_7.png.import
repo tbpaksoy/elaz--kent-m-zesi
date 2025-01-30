@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cscupgsapd3xo"
 path.s3tc="res://.godot/imported/Elazığ Kent Müzesi_Defence Shield 1 NM_7.png-f67c323cfdc4c484201d92ca53ceb4ce.s3tc.ctex"
+path.etc2="res://.godot/imported/Elazığ Kent Müzesi_Defence Shield 1 NM_7.png-f67c323cfdc4c484201d92ca53ceb4ce.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Elazığ Kent Müzesi_Defence Shield 1 NM_7.png"
-dest_files=["res://.godot/imported/Elazığ Kent Müzesi_Defence Shield 1 NM_7.png-f67c323cfdc4c484201d92ca53ceb4ce.s3tc.ctex"]
+dest_files=["res://.godot/imported/Elazığ Kent Müzesi_Defence Shield 1 NM_7.png-f67c323cfdc4c484201d92ca53ceb4ce.s3tc.ctex", "res://.godot/imported/Elazığ Kent Müzesi_Defence Shield 1 NM_7.png-f67c323cfdc4c484201d92ca53ceb4ce.etc2.ctex"]
 
 [params]
 

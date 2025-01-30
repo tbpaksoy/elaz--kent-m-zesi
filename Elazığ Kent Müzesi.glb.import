@@ -33,10 +33,6 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"@MATERIAL:0": {
-"use_external/enabled": true,
-"use_external/path": "res://Whiteness.tres"
-},
 "@MATERIAL:3": {
 "use_external/enabled": true,
 "use_external/path": "res://Whiteness.tres"
@@ -52,6 +48,9 @@ _subresources={
 },
 "nodes": {
 "PATH:Spot": {
+"import/skip_import": true
+},
+"PATH:Sun": {
 "import/skip_import": true
 }
 }
